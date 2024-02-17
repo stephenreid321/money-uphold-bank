@@ -105,7 +105,7 @@ class Money
       end
 
       def read_from_url
-        open(source_url).read
+        URI.open(source_url).read
       end
 
       def source_url
